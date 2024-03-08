@@ -38,6 +38,6 @@ public class InputController {
                 break;
         }
         model.addAttribute("result", result);
-        return "input";
+        return "Input";
     }
 }
