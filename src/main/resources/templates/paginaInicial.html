@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/styles/styleHome.css">
+</head>
+<body>
+<div class="card">
+    <h1>Qual aplicação deseja usar?</h1>
+    <div class="button-group">
+        <a th:href="@{/calculate}">
+            <button>Ir para Calculadora</button>
+        </a>
+        <a th:href="@{/game}">
+            <button>Ir para Jogo Secreto</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>

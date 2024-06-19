@@ -4,16 +4,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class InputController {
-    @GetMapping("/")
+public class CalculateController {
+    @GetMapping("/calculate")
     public ModelAndView calculator(){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("Input");
+        modelAndView.setViewName("calculate");
         return modelAndView;
     }
 
@@ -38,6 +37,6 @@ public class InputController {
                 break;
         }
         model.addAttribute("result", result);
-        return "Input";
+        return "calculate";
     }
 }
